@@ -11,9 +11,5 @@ STRIPE_API_KEY=sk_test_51NoCZWEnQz8cMyWOsgG9AgxrQbP8pLgqZlh2fAzrqymUT3pdpEDw44PP
 FRONTEND_STORE_URL=http://localhost:3001
 # FRONTEND_STORE_URL=https://vercel.com/ferdinand66/ecommerce-store
 STRIPE_WEBHOOK_SECRET=whsec_f374dc8606f7945dcea89fdcb215615261a155ab08ed83c70448bf4a1ceb3e8f
-# DATABASE_URL='mysql://is9150oajafmwtz6gblt:pscale_pw_StIKhBGiWMrx15PEEhshpdeBSTApH23MbqGf2FUBIpB@aws.connect.psdb.cloud/pcenter-ecommerce-admin?sslaccept=strict'
 
-
-DATABASE_URL='mysql://geluu0dd869pt4kxwlsy:pscale_pw_7YEBb59kyf0LLOjh46pEep7eodJkLpbd9jRGGwjyj1h@aws.connect.psdb.cloud/pcenter-ecommerce-admin?sslaccept=strict'
-
-DATABASE_URL='mysql://ihsqewxymime5ka017ve:pscale_pw_wcIN5mYLHlfHupYL37HEfEuwYimKKUqRhCxBOs3kUc7@aws.connect.psdb.cloud/pcenter-ecommerce-admin?sslaccept=strict'
+DATABASE_URL='mysql://n02q7tesv92084sgcnsw:pscale_pw_EkUMXJS5j9w5CRb5UowIKs3siVKhv12lKnQ8hfaTYZo@aws.connect.psdb.cloud/ecommerce-admin?sslaccept=strict'
