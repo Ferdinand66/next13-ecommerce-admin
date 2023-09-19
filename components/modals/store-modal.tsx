@@ -72,7 +72,7 @@ export const StoreModal = () => {
                   <Button disabled={loading} variant="outline" onClick={storeModal.onClose}>
                     Cancelar
                   </Button>
-                  <Button disabled={loading} type="submit">Continue</Button>
+                  <Button disabled={loading} type="submit">Continuar</Button>
                 </div>
               </form>
             </Form>
