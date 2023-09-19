@@ -15,7 +15,7 @@ export function MainNav({
   const routes = [
     {
       href: `/${params.storeId}`,
-      label: 'Overview',
+      label: 'Vista General',
       active: pathname === `/${params.storeId}`,
     },
     {
@@ -25,32 +25,32 @@ export function MainNav({
     },
     {
       href: `/${params.storeId}/categories`,
-      label: 'Categories',
+      label: 'Categorías',
       active: pathname === `/${params.storeId}/categories`,
     },
     {
       href: `/${params.storeId}/sizes`,
-      label: 'Sizes',
+      label: 'Medidas',
       active: pathname === `/${params.storeId}/sizes`,
     },
     {
       href: `/${params.storeId}/colors`,
-      label: 'Colors',
+      label: 'Colores',
       active: pathname === `/${params.storeId}/colors`,
     },
     {
       href: `/${params.storeId}/products`,
-      label: 'Products',
+      label: 'Productos',
       active: pathname === `/${params.storeId}/products`,
     },
     {
       href: `/${params.storeId}/orders`,
-      label: 'Orders',
+      label: 'Órdenes',
       active: pathname === `/${params.storeId}/orders`,
     },
     {
       href: `/${params.storeId}/settings`,
-      label: 'Settings',
+      label: 'Ajustes',
       active: pathname === `/${params.storeId}/settings`,
     },
   ]
@@ -70,7 +70,7 @@ export function MainNav({
           )}
         >
           {route.label}
-      </Link>
+        </Link>
       ))}
     </nav>
   )

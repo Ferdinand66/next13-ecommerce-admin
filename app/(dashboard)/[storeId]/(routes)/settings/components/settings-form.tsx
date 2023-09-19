@@ -58,7 +58,7 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
       router.refresh();
       toast.success('Store updated.');
     } catch (error: any) {
-      toast.error('Something went wrong.');
+      toast.error('Algo salió mal.');
     } finally {
       setLoading(false);
     }
@@ -70,9 +70,9 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
       await axios.delete(`/api/stores/${params.storeId}`);
       router.refresh();
       router.push('/');
-      toast.success('Store deleted.');
+      toast.success('Tienda Eliminada.');
     } catch (error: any) {
-      toast.error('Make sure you removed all products and categories first.');
+      toast.error('Debes eliminar todos los productos y categorías primero');
     } finally {
       setLoading(false);
       setOpen(false);
@@ -81,14 +81,14 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
 
   return (
     <>
-    <AlertModal 
-      isOpen={open} 
-      onClose={() => setOpen(false)}
-      onConfirm={onDelete}
-      loading={loading}
-    />
-     <div className="flex items-center justify-between">
-        <Heading title="Store settings" description="Manage store preferences" />
+      <AlertModal
+        isOpen={open}
+        onClose={() => setOpen(false)}
+        onConfirm={onDelete}
+        loading={loading}
+      />
+      <div className="flex items-center justify-between">
+        <Heading title="Ajustes de la Tienda" description="Administra preferencias de tu tienda" />
         <Button
           disabled={loading}
           variant="destructive"
@@ -107,9 +107,9 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>Nombre</FormLabel>
                   <FormControl>
-                    <Input disabled={loading} placeholder="Store name" {...field} />
+                    <Input disabled={loading} placeholder="Nombre de la tienda" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -117,14 +117,14 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
             />
           </div>
           <Button disabled={loading} className="ml-auto" type="submit">
-            Save changes
+            Guardar Cambios
           </Button>
         </form>
       </Form>
       <Separator />
-      <ApiAlert 
-        title="NEXT_PUBLIC_API_URL" 
-        variant="public" 
+      <ApiAlert
+        title="NEXT_PUBLIC_API_URL"
+        variant="public"
         description={`${origin}/api/${params.storeId}`}
       />
     </>
