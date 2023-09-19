@@ -15,3 +15,5 @@ STRIPE_WEBHOOK_SECRET=whsec_f374dc8606f7945dcea89fdcb215615261a155ab08ed83c70448
 
 
 DATABASE_URL='mysql://geluu0dd869pt4kxwlsy:pscale_pw_7YEBb59kyf0LLOjh46pEep7eodJkLpbd9jRGGwjyj1h@aws.connect.psdb.cloud/pcenter-ecommerce-admin?sslaccept=strict'
+
+DATABASE_URL='mysql://ihsqewxymime5ka017ve:pscale_pw_wcIN5mYLHlfHupYL37HEfEuwYimKKUqRhCxBOs3kUc7@aws.connect.psdb.cloud/pcenter-ecommerce-admin?sslaccept=strict'
