@@ -19,7 +19,7 @@ export async function POST(
     }
 
     if (!label) {
-      return new NextResponse("Etiqueta is requerido", { status: 400 });
+      return new NextResponse("Label is required", { status: 400 });
     }
 
     if (!imageUrl) {
@@ -41,7 +41,7 @@ export async function POST(
       return new NextResponse("Unauthorized", { status: 405 });
     }
 
-    const billboard = await prismadb.billboard.create({
+    const home = await prismadb.home.create({
       data: {
         label,
         imageUrl,
@@ -49,9 +49,9 @@ export async function POST(
       },
     });
 
-    return NextResponse.json(billboard);
+    return NextResponse.json(home);
   } catch (error) {
-    console.log("[BILLBOARDS_POST]", error);
+    console.log("[HOMES_POST]", error);
     return new NextResponse("Internal error", { status: 500 });
   }
 }
@@ -65,15 +65,15 @@ export async function GET(
       return new NextResponse("Store id is required", { status: 400 });
     }
 
-    const billboards = await prismadb.billboard.findMany({
+    const homes = await prismadb.home.findMany({
       where: {
         storeId: params.storeId,
       },
     });
 
-    return NextResponse.json(billboards);
+    return NextResponse.json(homes);
   } catch (error) {
-    console.log("[BILLBOARDS_GET]", error);
+    console.log("[HOMES_GET]", error);
     return new NextResponse("Internal error", { status: 500 });
   }
 }

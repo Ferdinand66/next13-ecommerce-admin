@@ -12,7 +12,7 @@ const HomesPage = async ({
 }) => {
   const homes = await prismadb.home.findMany({
     where: {
-      storeId: params.storeId
+      storeId: params.storeId 
     },
     orderBy: {
       createdAt: 'desc'
